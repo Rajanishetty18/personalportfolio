@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+<body>
+<!-- --------------------------------NavBar--------------------------- -->
+    <nav id="navbar">
+            <div class="name">RAJANI</div>
+            <div>
+                <ul class="navlink">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+    </nav>
+<!-- --------------------------------NavBar End----------------------- -->
+
+<!-- --------------------------------Hamburger------------------------ -->
+    <nav id="Hamburger_Nav">
+        <div class="name">RAJANI</div>
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu_link">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#Project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+<!-- --------------------------------Hamburger End-------------------- -->
+
+<!-- --------------------------------Sections------------------------- -->
+ <section class="profile_section">
+    <section id="profile">
+        <div class="Profil_pic">
+            <img src="../Assets/Profile_pic.png" alt="Rajani's profile picture">
+        </div>
+    </section>
+    <section id="profile_title">
+        <p class="section_text_1">Hello, I'm</p>
+        <h1 class="title">Rajani Shetty</h1>
+        <p class="section_text_2">Computer Science Graduate</p>
+        <div class="button_container">
+            <button class="press_button_resume" class="icon" onclick="window.open('/Assets/Rajani_resume.pdf')">Download CV</button>
+            <button class="press_button_Contact" class="icon"onclick="location.href='./#Contact'">Contact</button>
+        </div>
+        <div id="Social_media">
+            <img src="../Assets/LinkedIn.png" class="logo" alt="LinkedIn logo" onclick="window.open('https://www.linkedin.com/in/rajanishettyy')">
+            <img src="../Assets/Github_logo.png" class="logo" onclick="window.open('https://github.com/Rajanishetty18')"alt="Github account">
+        </div>
+    </section>
+</section>
+<!-- --------------------------------Sections End--------------------- -->
+
+<!-- --------------------------------About Section-------------------- -->
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="/Assets/Profile_pic.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="/Assets/Experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>6 month :<br />Web Development internship</p>
+            <p>2 month :<br />Front End Development internship</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="/Assets/Education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>B.E Bachelors Degree in Computer Science</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+<!-- --------------------------------About Section End---------------- -->
+
+<!-- --------------------------------Skills section------------------- -->
+<section id="Skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="Skill_section-container">
+    <div class="section_1">
+      <div class="skill_details-container">
+        <img src="/Assets/Skills.png" alt="Skill icon" class="icon"/>
+        <h3>HTML</h3>
+      </div>
+      <div class="skill_details-container">
+        <img src="/Assets/Skills.png" alt="Skill icon" class="icon"/>
+        <h3>CSS</h3>
+      </div>
+      <div class="skill_details-container">
+        <img src="/Assets/Skills.png" alt="Skill icon" class="icon"/>
+        <h3>Javascript</h3>
+      </div>
+    </div>
+    <div class="section_1">
+      <div class="skill_details-container">
+        <img src="/Assets/Skills.png" alt="Skill icon" class="icon"/>
+        <h3>C programming</h3>
+      </div>
+      <div class="skill_details-container">
+        <img src="/Assets/Skills.png" alt="Skill icon" class="icon"/>
+        <h3>Python</h3>
+      </div>
+      <div class="skill_details-container">
+        <img src="/Assets/Skills.png" alt="Skill icon" class="icon"/>
+        <h3>SQL</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- --------------------------------Skills section End--------------- -->
+
+<!-- --------------------------------Project section------------------ -->
+ <section id="Project">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="section_container">
+    <div class="Project-details-container">
+      <div class="Project-containers">
+
+        <details class="P_details-container">
+          <summary>
+            <img src="/Assets/Project_1.jpeg" alt="Project_1 icon" class="P_icon"/>
+            <h3 class="Project_name">Diabetic Retinopathy Detection System</h3>
+            <button class="Github" onclick="window.open('https://github.com/Rajanishetty18')">GitHub</button>
+          </summary>
+          <img src="/Assets/Project_1_1.png" alt="Diabetic Retinopathy Detection" class="project-full-image">
+          <img src="/Assets/Project_1_2.png" alt="Diabetic Retinopathy Detection" class="project-full-image">
+          <img src="/Assets/Project_1_3.png" alt="Diabetic Retinopathy Detection" class="project-full-image">
+        </details>
+
+        <details class="P_details-container">
+          <summary>
+            <img src="/Assets/Project_2.jpg" alt="Project_2 icon" class="P_icon"/>
+            <h3 class="Project_name">Android Battery Saver System</h3>
+            <button class="Github" onclick="window.open('https://github.com/Rajanishetty18/Android-Battery-Saver-System')">GitHub</button>
+          </summary>
+          <img src="/Assets/Project_2_1.jpeg" alt="Android Battery Saver System" class="project-full-image">
+        </details>
+
+        <details class="P_details-container">
+          <summary>
+            <img src="/Assets/Project_3.jpg" alt="Project_3 icon" class="P_icon"/>
+            <h3 class="Project_name">Online Food Ordering System</h3>
+            <button class="Github" onclick="window.open('https://github.com/Rajanishetty18/Online_food_ordering_system')">GitHub</button>
+          </summary>
+          <img src="/Assets/Project_3_1.PNG" alt="Online Food Ordering System" class="project-full-image">
+          <img src="/Assets/Project_3_2.PNG" alt="Online Food Ordering System" class="project-full-image">
+          <img src="/Assets/Project_3_3.PNG" alt="Online Food Ordering System" class="project-full-image">
+          <img src="/Assets/Project_3_4.PNG" alt="Online Food Ordering System" class="project-full-image">
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- --------------------------------Project section End-------------- -->
+
+<!-- --------------------------------Contact Section------------------ -->
+<section id="Contact">
+    <p class="section__text__p1">Get In touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="Contact-details-container">
+        <div class="Contact-container">
+            <img src="../Assets/LinkedIn.png" class="logo" alt="LinkedIn logo" onclick="window.open('https://www.linkedin.com/in/rajanishettyy')">
+            <h3 class="Linkedin">LinkedIn</h3>
+          </div>
+        <div class="Contact-container">
+          <img src="../Assets/Email.png" class="logo" alt="LinkedIn logo" onclick="window.open('https://www.linkedin.com/in/rajanishettyy')">
+          <a href="mailto:shettyrajani1245@gmail.com">shettyrajani1245@gmail.com</a>
+        </div>
+    </div>
+</section>
+<!-- --------------------------------Contact section End-------------- -->
+<script src="script.js"></script>
+</body>
+</html>
