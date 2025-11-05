@@ -113,8 +113,11 @@ a:hover{
 }
 
 section {
-    padding: 60px 15px;
-   scroll-margin-top: 80px;
+    min-height: 90vh;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+    transform: translateY(30px);
 }
 
 .profile_section {
